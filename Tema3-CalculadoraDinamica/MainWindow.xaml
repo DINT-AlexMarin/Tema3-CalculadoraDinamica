@@ -14,7 +14,9 @@
     </Window.Resources>
     <DockPanel LastChildFill="True">
         <Border Margin="10" DockPanel.Dock="Top" BorderBrush="Black" BorderThickness="1">
-            <TextBlock x:Name="resultado_TextBlock" FontSize="30" Height="120"></TextBlock> 
+            <Viewbox Margin="5" Height="120">
+                <TextBlock x:Name="resultado_TextBlock" FontSize="30"></TextBlock>
+            </Viewbox>
         </Border>
         
         <Button FontSize="20" Content="0" Margin="5" Height="40" DockPanel.Dock="Bottom"></Button>
