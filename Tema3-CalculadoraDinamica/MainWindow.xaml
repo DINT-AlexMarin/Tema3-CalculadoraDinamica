@@ -6,9 +6,15 @@
         xmlns:local="clr-namespace:Tema3_CalculadoraDinamica"
         mc:Ignorable="d"
         Title="CalculadoraDinamica" Height="450" Width="800" Icon="assets/error_calculator.ico">
+    <Window.Resources>
+        <Style TargetType="{x:Type Button}">
+            <EventSetter Event="Click" Handler="Button_Click"></EventSetter>
+        </Style>
+
+    </Window.Resources>
     <DockPanel LastChildFill="True">
         <Border Margin="10" DockPanel.Dock="Top" BorderBrush="Black" BorderThickness="1">
-            <TextBlock Height="120"></TextBlock> 
+            <TextBlock x:Name="resultado_TextBlock" FontSize="30" Height="120"></TextBlock> 
         </Border>
         
         <Button FontSize="20" Content="0" Margin="5" Height="40" DockPanel.Dock="Bottom"></Button>

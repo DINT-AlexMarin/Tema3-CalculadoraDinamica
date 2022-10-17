@@ -37,10 +37,15 @@ namespace Tema3_CalculadoraDinamica
                     grid.Children.Add(btn1);
                     Grid.SetColumn(btn1, j);
                     Grid.SetRow(btn1, i);
-
                 }
             }
             
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Button boton = (Button)sender;
+            resultado_TextBlock.Text += boton.Content.ToString();
         }
     }
 }
